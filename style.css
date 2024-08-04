@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* basic */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+a {
+    color: #FFFF;
+    text-decoration: none;
+  }
+
+@media screen and (max-width: 650px) {
+    main {
+        flex-direction: column;
+    }
+    .item-3 {
+        order: -1;
+    }  
+  } 
+
+/* basic close */
+
+/* header */
+.flex-item {
+    position: fixed;
+    width: 100%;
+}
+
+.img-logo {
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 94px;
+    width: 240px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+.item-1{
+    background: rgb(39, 167, 231);
+    min-height: 80px;
+}
+
+.header-item {
+    margin-left: 40px;
+    text-align: center;
+    padding: 5px 30px;
+    font-size: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all.8s;
+}
+
+.header-item:hover {
+    background: #2777e7;
+    border-radius: 10px 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .img-logo {
+        display: none;
+    }
+    .header-item {
+        display: flex;
+        align-self: center;
+        font-size: 20px;
+        margin-left: 0;     
+    }
+}
+/* header close */
+
+/* main */
+/* section 1 */
+.flex-p {
+    text-indent: -3%;
+    color: rgb(16, 16, 16);
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 1s; /* Время эффекта */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+}
+
+.description-item {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+    margin-bottom: -5vw;
+}
+
+.description-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding-left: 15px;
+    color: #2777e7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 800px;
+    height: 350px;
+}
+
+.h1-section-title {
+    color: rgb(39, 167, 231);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.img-1 {
+    margin-top: 27px;
+    width: 400px;
+    height: 400px;
+}
+
+@media screen and (max-width: 650px) {
+    .description-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .description-text { 
+        /* margin-bottom: 60px; */
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .img-1 {
+        width: 300px;
+        height: 300px;
+        margin-top: 30px;
+        margin-left: 31px;
+    }
+    .description-colum > p{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: 44%;
+        text-indent: 0;
+    }
+    .description-colum > h1 {
+        margin-left: 15.5px;
+    }
+}
+/* section-1 close */
+/* main */
+/* main */
+/* section 2 */
+.section-item {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 19px;
+    padding-left: 15px;
+    color: #2777e7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 800px;
+    height: 350px;
+}
+
+.main-colum {
+    display: flex;
+    flex-direction: row;
+    margin-top: -5%;
+}
+
+.keyboard {
+    border-radius: 10px 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    height: 100px;
+    margin-left: 15px;
+    margin-top: 70px;
+    background: rgb(39, 167, 231);
+    color: #fff;
+    transition: all.8s;
+}
+
+.keyboard:hover {
+    background: #2777e7;
+    border-radius: 10px 10px;
+}
+
+.img-section {
+    margin-top: 30px;
+}
+
+.img-2 {
+    width: 400px;
+    height: 400px;
+}
+
+.h1-section-title-2 {
+    color: rgb(39, 167, 231);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+    padding-left: 15px;
+    color: #2777e7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 800px;
+    height: 350px;
+}
+
+@media screen and (max-width:650px) {
+    .section-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-colum {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: 44%;
+        text-indent: 0;
+    }
+    .section-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-2 {
+        width: 300px;
+        height: 300px;
+        margin-top: 30px;
+        margin-left: 31px;
+    }
+}
+/* section 2 close */
+/* section 3 */
+.section-3 {
+    border: solid 1px black;
+    margin-top: 1cm;
+    margin-left: 10%;
+    background: white;
+    width: 80%;
+    min-height: 200px;
+}
+
+.acardion {
+    /* background: url("img/products — копия.png"); */
+    background-size: cover;
+    min-height: 70vh;
+    flex: 1;
+    margin-bottom: 60px;
+    background-image: linear-gradient(
+    rgba(255, 255, 255, 0.4), 
+    rgba(255, 255, 255, 0.4)
+  ), url('img/products\ —\ копия.png');
+}
+
+.active, .accordion:hover {
+    background-color: #2777e7;
+}
+
+.h1-about-bot-3 {
+    margin-left: 90px;
+}
+
+.h2-product {
+    margin-top: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    color: rgb(7, 80, 117);
+}
+
+.p-products {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+}
+
+.accordion {
+    background-color: rgb(39, 167, 231, 0.8);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    margin-top: 5px;
+    width: 92%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    /* background-color: white; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* @media screen and(max-width: 650px) {
+    .section-3 {
+        margin-top: 160px;
+    }
+    .acardion {
+        margin-top: 100px;
+    }
+} */
