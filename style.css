@@ -94,7 +94,7 @@ a {
 }
 
 .description-item {
-    margin-top: 16px;
+    margin-top: 130px;
     display: flex;
     flex-direction: row;
     margin-left: 8%;
@@ -127,6 +127,7 @@ a {
     .description-item {
         display: flex;
         flex-direction: column;
+        margin-top: -0.1vw;
     }
     .description-text { 
         /* margin-bottom: 60px; */
@@ -137,7 +138,7 @@ a {
     .img-1 {
         width: 300px;
         height: 300px;
-        margin-top: 30px;
+        /* margin-top: 30px; */
         margin-left: 31px;
     }
     .description-colum > p{
@@ -250,18 +251,17 @@ a {
 /* section 2 close */
 /* section 3 */
 .section-3 {
-    border: solid 1px black;
-    margin-top: 1cm;
+    margin-top: 2cm;
     margin-left: 10%;
     background: white;
     width: 80%;
-    min-height: 200px;
+    min-height: 3vw;
 }
 
 .acardion {
     /* background: url("img/products — копия.png"); */
     background-size: cover;
-    min-height: 70vh;
+    min-height: 60vh;
     flex: 1;
     margin-bottom: 60px;
     background-image: linear-gradient(
@@ -325,11 +325,163 @@ a {
     transition: max-height 0.2s ease-out;
 }
 
-/* @media screen and(max-width: 650px) {
+@media screen and (max-width: 650px) {
     .section-3 {
-        margin-top: 160px;
+        margin-top: 122vw;
     }
-    .acardion {
-        margin-top: 100px;
+}
+/* close section 3 */ 
+/* section 4 */
+.main {
+    background: #fff;
+    margin-top: 60px;
+    width: 100%;
+    max-width: 960px;
+    min-width: 430px;
+    margin: auto;
+    flex: auto;
+    box-sizing: border-box;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-itm {
+    margin-bottom: 30px;
+    flex-basis: calc(33.33% - 30px * 2/3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-content > p {
+    text-indent: -3%;
+    color: rgb(16, 16, 16);
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 1s; /* Время эффекта */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+}
+
+.grid-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    flex: 0 1 80%;
+}
+
+.grid-title {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(39, 167, 231);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grid-content {
+    flex: 0 1 100%;
+    text-align: center;
+}
+
+.grid-content > p {
+    text-align: center;
+}
+
+
+.grid-img > img {
+    width: 100%;
+    min-height: 200px;
+}
+
+.h2 {
+    color: #2777e7;
+    margin-bottom: 4vw;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vw;
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        display: none;
     }
-} */
+    .grid-itm {
+        flex-wrap: nowrap;
+        flex-basis: 100%;
+    }
+    .grid-img {
+        flex: 0 0 auto;
+    }
+    .grid-img {
+        order: 2;
+    }
+    .grid-content {
+        flex: 1 1 auto;
+    }
+    .grid-title {
+        order: 1;
+    }
+    .h2 {
+        font-size: 6vw;
+    }
+}
+/* close section 4 */
+/* section 5 */
+
+.section-5 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+}
+
+.about-bot {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 3vw;
+    width: 810px;
+}
+
+.img-3 {
+    width: 400px;
+    height: 400px;
+}
+
+.h1-section-title-5 {
+    color: rgb(39, 167, 231);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+}
+
+@media screen and (max-width: 650px) {
+    .section-5 {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-bot {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: 44%;
+        text-indent: 0;
+    }
+    .section-text{
+        display: flex;
+        flex-direction: column;
+        margin-top: -4vw;
+    }
+    .img-3 {
+        width: 300px;
+        height: 300px;
+        margin-top: -5vw;
+        margin-left: 31px;
+    }
+    .h1-section-title-5 {
+        margin-left: 120px;
+    }
+}
