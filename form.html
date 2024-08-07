@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <div class="main">
+        <div class="description">
+            <h1>Обсудить задачу</h1>
+            <p>У вас появились вопросы?Заполните форму обратной связи и наши менеджеры
+                свяжутся свами в ближайшее время.
+            </p>
+            <a href="#" class="bot"><img src="img/icon.png" alt="icon"></a>
+            <a href="#" class="a">связь с @telegaBots</a>            
+        </div>
+        <div class="modal-window">
+            <form action="">
+                <div class="object-item">
+                    <label for="name" id="did">Укажите ваше имя</label>
+                    <input type="text" class=" id="name" placeholder="Укажите ваше имя">
+                </div>
+                <div class="object-item">
+                    <label for="login" >Укажите ваш логин в телеграме</label>
+                    <input type="text" id="login" placeholder="например '@telegaBots'">
+                </div>
+                <div class="object-item">
+                    <label for="e-mail" >Укажите ваш e-mail</label>
+                    <input type="email" id="e-mail" placeholder="Укажите ваш e-mail">
+                </div>
+                <div action="textarea1.php" method="post">
+                    <p><textarea rows="10" cols="43.9" name="text" placeholder="Ваш вопрос:"></textarea></p>
+                </div>
+                <div class="button">
+                    <p class="button"><input type="submit" value="Отправить"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <style>
+        .a {
+            text-decoration: none;
+            color: black;
+            margin-left: 20px;
+            
+        }
+        .bot {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 160px;
+            margin-right: 230px;
+            padding: 10px;
+        }
+        .button > input {
+            border-radius: 10px 10px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 200px;
+            height: 50px;
+            margin-top: -1vw;
+            background: rgb(39, 167, 231);
+            color: #fff;
+            transition: all.8s;
+        }
+        .main {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .modal-window {
+            background-color: rgb(155, 210, 237);
+            width: 400px;
+            height: 570px;
+            border: solid 1px black;
+            border-radius: 0px 7px 7px 0px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 30px;
+        }
+        .object-item {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            padding-top: 5px;
+            text-align: start;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .object-item > input {
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 7px 7px;
+        }
+        /* block 1 */
+        .description {
+            background-color: rgb(155, 210, 237);
+            border: solid 1px black;
+            width: 400px;
+            min-height: 570px;
+            border-radius: 7px 0px 0px 7px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 120px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 45px;
+
+        }
+        p {
+            margin-top: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 10px;
+            font-size: 14px;
+        }
+        p > textarea {
+            resize: none;
+            margin-left: -10px;
+            border-radius: 7px 7px;
+            padding: 15px;
+        }
+        textarea::placeholder {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        img {
+            width: 110px;
+            height: 100px;
+        }
+        @media screen and (max-width: 650px) {
+            .description {
+                display: none;
+            }
+            .modal-window {
+                
+                width: 300px;
+                min-height: 200px;
+            }
+            p > textarea {
+                width: 210px;
+            }
+        }
+    </style>
+</body>
+</html>

@@ -433,6 +433,7 @@ a {
 
 .section-5 {
     margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     margin-left: 8%;
@@ -483,5 +484,81 @@ a {
     }
     .h1-section-title-5 {
         margin-left: 120px;
+    }
+}
+/* close section 5 */
+/* footer*/
+footer{
+    position: relative;/*относительное позиционирование*/
+    width: 100%;/*на всю ширину*/
+    background: rgb(39, 167, 231);/*цвет футера*/
+    display: flex;
+    justify-content: center;/*в центре по горизонтали*/
+    align-items: center;/*в центре по вертикали*/
+    flex-direction: column;
+}
+footer .wave{
+    position: absolute;/*абсолютное позиционирование*/
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);/*картинка волны*/
+    background-size: 1000px 100px;/*ширина и высота волны*/
+}
+.social,
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+.social li,
+.menu li{
+    list-style: none;/*удалить черные маркеры*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+.social li a {
+    font-size: 2em;/*размер иконок*/
+    color: #2777e7;/*цвет иконок*/
+    margin: 0 10px;
+    display: inline-block;/*отображать как строчно-блочный элемент*/
+    transition: 0.5s;/*плавный переход*/
+}
+.menu li a {
+    font-size: 1.2em;/*размер ссылок меню*/
+    color: #ffff;/*цвет ссылок меню*/
+    opacity: 0.75;/*значение прозрачности*/
+    margin: 0 15px;
+    text-decoration: none;/*ссылка без подчеркивания*/
+    display: inline-block;
+}
+.menu li a:hover {
+    opacity: 1;
+}
+footer p {
+    color: #2777e7;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 650px) {
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu {
+        font-size: 16px;
+    }
+    .cervis {
+        display: none;
+        color: rebeccapurple;
+    }
+    footer > p {
+        font-size: 14px;;
     }
 }
