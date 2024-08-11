@@ -1,28 +1,30 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="C:\Users\serge\OneDrive\Рабочий стол\orig telegaBots\style.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
     <div class="flex-container">
         <!-- header -->
         <header class="flex-item item-1">
-            <a href="#"><img class="img-logo" src="img/logo.png" alt="logo"></a>
+            <a href="#"><img class="img-logo" src="{% static 'img/logo.png'%}" alt="logo"></a>
             <a href="#" class="header-item">Главная</a>
             <a href="#" class="header-item">Наши предложения</a>
             <a href="#" class="header-item">О нас</a>
             <a href="#" class="header-item">Контакты</a>
-        </header> 
+        </header>
         <!-- header close -->
         <!-- main -->
         <main>
             <!-- section 1 -->
             <section class="description-item item-2">
                 <div class="img-item">
-                    <img class="img-1" src="img/about-bot.png" alt="description">
+                    <img class="img-1" src="{% static 'img/about-bot.png'%}" alt="description">
                 </div>
                 <div class="description-text">
                     <div class="description-colum">
@@ -52,19 +54,23 @@
                         отправте нам заявку через сайт или напишите нашему боту telegaBots.
                     </p>
                     </div>
+                    <div class="pulser">
+                        <a href="#"><img class="fixed-1" src="{% static 'img/about-bot.png'%}" alt="bot"></a>
+                    </div>
                 </div>
             </section>
             <!-- section 2 -->
             <section class="section-item item-3" id="main">
                 <div class="img-section">
-                    <img class="img-2" src="img/main.png" alt="main">
+                    <img class="img-2" src="{% static 'img/main.png'%}" alt="main">
                 </div>
                 <div class="section-text">
                     <div class="section-colum">
                         <h1 class="h1-section-2"><hr>Закажите <span class="h1-section-title-2">телеграм бот</span> для себя или бизнеса!</h1>
                     <p class="flex-p">Получите своего  <b>личного помощника бота</b>,которому не нужно платить
                         зарплату,
-                        но он будет делать за вас любые рутинные работы, и автоматизирует любой ваш процесс!!!</p>
+                        но он будет делать за вас любые рутинные работы, и автоматизирует любой ваш процесс!!!
+                    </p>
                         <form action="#">
                             <button class="keyboard">ОСТАВИТЬ ЗАЯВКУ</button>
                         </form>
@@ -83,7 +89,7 @@
                                 красоты,
                                 запись в автосервис, заказ еды, и многое другое.</p>
                         </div>
-        
+
                         <button class="accordion"><b>Бот с фукцией приёмом платижей</b></button>
                         <div class="panel">
                             <p class="p-products">Этот бот позволяет круглосуточно 24/7 принимать оплату за ваш товар или услугу
@@ -91,7 +97,7 @@
                                 Обеспечивает работу по эффективному обслуживанию подписчиков.Консультирует пользователей по
                                 вопросам наличия имеющихся услуг.</p>
                         </div>
-        
+
                         <button class="accordion"><b>Рассылки</b></button>
                         <div class="panel">
                             <p class="p-products">Бот этой фукцией может рассылать ваши предложения всем подписчикам бота,
@@ -103,19 +109,19 @@
                             <p class="p-products">Создадим бота который будет отвечать на частые вопросы ваших подписчиков, в
                                 удобной понятной форме с кнопками и подробным описанием.</p>
                         </div>
-        
+
                         <button class="accordion"><b>интернет магазин</b></button>
                         <div class="panel">
                             <p class="p-products">С помощью бота будите продавать свои товары и услуги на полном автомате,
                                 бот будет с каталогом, с корзиной, с командами администратора, где вы полостью будите
                                 редоктировать товары и услуги.</p>
                         </div>
-        
+
                         <button class="accordion"><b>Другое</b></button>
                         <div class="panel">
                             <p class="p-products">Рассмотрим и реализуем вашу идею.</p>
                             </div3 </div>
-        
+
                         </div>
                     </div>
                 </div>
@@ -127,7 +133,7 @@
                     <div class="grid">
                         <div class="grid-itm">
                             <div class="grid-img">
-                                <img src="img/бот с высокой скоростью ответа.png" alt="">
+                                <img src="{% static 'img/бот с высокой скоростью ответа.png'%}" alt="">
                             </div>
                             <div class="grid-content">
                                 <h2 class="grid-title">Высокая скорость ответа</h2>
@@ -138,7 +144,7 @@
                         </div>
                         <div class="grid-itm">
                             <div class="grid-img">
-                                <img src="img/бот с внимание к клиенту.png" alt="">
+                                <img src="{% static 'img/бот с внимание к клиенту.png'%}" alt="">
                             </div>
                             <div class="grid-content">
                                 <h2 class="grid-title">Внимание к клиенту</h2>
@@ -148,20 +154,20 @@
                         </div>
                         <div class="grid-itm">
                             <div class="grid-img">
-                                <img src="img/бот с оповещение .png" alt="">
+                                <img src="{% static 'img/бот с оповещение .png'%}" alt="">
                             </div>
                             <div class="grid-content">
                                 <h2 class="grid-title">Система оповещений</h2>
                                 <p>В любой момент вы можете напомнить о себе клиентам.Рассказать про новые товары, акции, бонусы
                                 </p>
                             </div>
-        
+
                         </div>
                     </div>
                     <div class="grid">
                         <div class="grid-itm">
                             <div class="grid-img">
-                                <img src="img/бот с интеграцией.png" alt="">
+                                <img src="{% static 'img/бот с интеграцией.png'%}" alt="">
                             </div>
                             <div class="grid-content">
                                 <h2 class="grid-title">Интеграция</h2>
@@ -171,7 +177,7 @@
                         </div>
                         <div class="grid-itm">
                             <div class="grid-img">
-                                <img src="img/бот без регистрации.png" alt="">
+                                <img src="{% static 'img/бот без регистрации.png'%}" alt="">
                             </div>
                             <div class="grid-content">
                                 <h2 class="grid-title">Без регистраций</h2>
@@ -182,7 +188,7 @@
                         </div>
                         <div class="grid-itm">
                             <div class="grid-img">
-                                <img src="img/бот не расходут трафик.png" alt="">
+                                <img src="{% static 'img/бот не расходут трафик.png'%}" alt="">
                             </div>
                             <div class="grid-content">
                                 <h2 class="grid-title">Не расходует трафик</h2>
@@ -190,14 +196,14 @@
                                     картинок и тяжелых сайтов.
                                     Клиент пишит боту и получает нужную информацию. </p>
                             </div>
-        
+
                         </div>
                     </div>
                 </main>
                 <!-- section 5 -->
                 <section class="section-5">
                     <div class="section-container-5">
-                        <img class="img-3" src="img/о нас.png" alt="main">
+                        <img class="img-3" src="{% static 'img/о нас.png'%}" alt="main">
                     </div>
                     <div class="section-text">
                         <div class="about-bot">
