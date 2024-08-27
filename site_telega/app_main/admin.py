@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from app_main.models import ShapeRetention
+
+admin.site.register(ShapeRetention)
