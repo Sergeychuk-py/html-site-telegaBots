@@ -230,6 +230,7 @@ a {
 
 .keyboard {
     border-radius: 10px 10px;
+    border: none;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     width: 300px;

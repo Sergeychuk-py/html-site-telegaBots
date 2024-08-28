@@ -55,7 +55,7 @@
                     </p>
                     </div>
                     <div class="pulser">
-                        <a href="#"><img class="fixed-1" src="{% static 'img/about-bot.png'%}" alt="bot"></a>
+                        <a href="#"><img class="fixed-1" src="{% static 'img/icon.png'%}" alt="icon"></a>
                     </div>
                 </div>
             </section>
@@ -71,7 +71,7 @@
                         зарплату,
                         но он будет делать за вас любые рутинные работы, и автоматизирует любой ваш процесс!!!
                     </p>
-                        <form action="#">
+                        <form action="{% url 'form' %}">
                             <button class="keyboard">ОСТАВИТЬ ЗАЯВКУ</button>
                         </form>
                     </div>
@@ -241,5 +241,5 @@
         </main>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="{% static 'script.js'%}"></script>
 </html>
