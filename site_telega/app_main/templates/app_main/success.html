@@ -1,0 +1,126 @@
+{% extends "app_main/base.html" %}
+{% load static %}
+
+
+
+{% block header %}
+        <header class="flex-item-1 item-1">
+            <a href="{% url 'índex' %}" class="header-item">Главная</a>
+            <a href="#" class="header-item">Наши предложения</a>
+            <a href="#" class="header-item">О нас</a>
+            <a href="#" class="header-item">Контакты</a>
+        </header>
+    {% endblock %}
+
+{% block content %}
+    <div class="modal">
+        <div class="window">
+            <img src="{% static 'img/check.png'%}" alt="icon">
+        </div>
+        <div class="window-1">
+            <p class="item-1">Заявка принята!!!</p>
+            <p class="item-2">Менеджеры свяжутся с вами в ближащее время.</p>
+        </div>
+
+    </div>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .flex-item-1 {
+            width: 100%;
+        }
+
+        .img-logo {
+            border-radius: 10px 10px 10px 10px;
+            margin-left: 94px;
+            width: 240px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 15px;
+            padding-left: 15px;
+        }
+
+        .item-1{
+            background: rgb(39, 167, 231);
+            min-height: 100px;
+            margin-bottom: -60px;
+        }
+
+        .header-item {
+            margin-left: 60px;
+            text-align: center;
+            padding: 5px 30px;
+            font-size: 29px;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: all.8s;
+        }
+
+        .header-item:hover {
+            background: #2777e7;
+            border-radius: 10px 10px;
+        }
+
+        @media screen and (max-width: 650px) {
+            .img-logo {
+                display: none;
+            }
+            .header-item {
+                display: flex;
+                align-self: center;
+                font-size: 20px;
+                margin-left: 0;
+            }
+        }
+        /* header close */
+        .modal {
+            margin-top: -80px;
+            background: rgb(39, 167, 231);
+            display: flex;
+            flex-direction: row;
+            margin-left: 550px;
+            margin-top: 200px;
+            width: 390px;
+            height: 200px;
+            border-radius: 10px;
+            border: solid rgb(39, 167, 231);
+            margin-bottom: 230px;
+        }
+        .window img {
+            width: 110px;
+            height: 120px;
+            padding: 40px 17px 30px 30px;
+        }
+
+        .item-1 {
+            color: #fff;
+            padding-top: 48px;
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .window-1 .item-2 {
+            color: #fff;
+            padding-top: 80px;
+            padding-right: 40px;
+            font-size: 15px;
+        }
+
+    </style>
+{% endblock %}
+{% block footer %}
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="#main">Гланая</a></li>
+            <li><a href="#">О нас</a></li>
+            <li class="cervis"><a href="#">Наши предложения</a></li>
+            <li><a href="#">    </a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <p>©2022 Разработка ботов | Все права защищены</p>
+    </footer>
+
+{% endblock %}

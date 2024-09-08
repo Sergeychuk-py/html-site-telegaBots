@@ -19,6 +19,228 @@
     {% endblock %}
 
     {% block content %}
+        <main>
+            <!-- section 1 -->
+            <section class="description-item item-2">
+                <div class="img-item">
+                    <img class="img-1" src="{% static 'img/about-bot.png'%}" alt="description">
+                </div>
+                <div class="description-text">
+                    <div class="description-colum">
+                        <h1><hr>Что такое <span class="h1-section-title">телеграм бот</span>?</h1>
+                    <p class="flex-p">Само слово «бот» представляет собой сокращение от привычного «робот».
+                        По <span>большому счету, именно <b>телеграм-бот</b>,</span> как раз им и является. Эти специальные аккаунты,
+                        которые создаются автоматически, дают пользователям возможность выполнять разные задачи посредством
+                        мессенджера.
+                        На сегодняшний день телеграм-боты получили широкое распространение.
+                        С их помощью пользователям становится значительно легче выполнять повседневные задачи.
+                        Более того, роботы выступают в качестве <span><b>важнейших инструментов для рутинных работ</b>.</span></p>
+                    </div>
+                    <div class="description-colum">
+                        <h1><br><hr>Зачем нужен <span class="h1-section-title">бот</span>?</h1>
+                    <p class="flex-p">Бот в телеграм даёт возможность быть на связи с клиентом постоянно, с любового
+                        устройства.
+                        Боты отвечают на вопросы, выставляют счета, принимают оплату, делают всё, что вы придумаете для них.
+                        Они в разы <span><b>дешевле</b>,</span> чем сотрудник на телефоне или мобильное приложение.
+                    </p>
+                    </div>
+                    <div class="description-colum">
+                        <h1><br><hr>Сколько стоит разработка <span class="h1-section-title">ботa</span>?</h1>
+                    <p class="flex-p">Стоимость создания(разработки) бота зависит от набора функций, бот
+                        разрабатывается на языке програмирования <span><b>Python</b>,</span>
+                        вы получите исходный код и полностью автономный и ни от кого независивый,
+                        начальная цена <span>у нас начинается от <b>2999</b> рублей.</span>Чтобы получить информацию о точной стоимости,
+                        отправте нам заявку через сайт или напишите нашему боту telegaBots.
+                    </p>
+                    </div>
+                    <div class="pulser">
+                        <a href="#"><img class="fixed-1" src="{% static 'img/icon.png'%}" alt="icon"></a>
+                    </div>
+                </div>
+            </section>
+            <!-- section 2 -->
+            <section class="section-item item-3" id="main">
+                <div class="img-section">
+                    <img class="img-2" src="{% static 'img/main.png'%}" alt="main">
+                </div>
+                <div class="section-text">
+                    <div class="section-colum">
+                        <h1 class="h1-section-2"><hr>Закажите <span class="h1-section-title-2">телеграм бот</span> для себя или бизнеса!</h1>
+                    <p class="flex-p">Получите своего  <b>личного помощника бота</b>,которому не нужно платить
+                        зарплату,
+                        но он будет делать за вас любые рутинные работы, и автоматизирует любой ваш процесс!!!
+                    </p>
+                        <form action="{% url 'form' %}">
+                            <button class="keyboard">ОСТАВИТЬ ЗАЯВКУ</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- section 3 -->
+            <section class="section-3">
+                <div class="acardion">
+                    <div class="h1-about-bot-3">
+                        <h2 class="h2-product">Телеграм боты:</h2>
+                        <p><b>Не которые примеры ботов</b></p>
+                        <button class="accordion"><b>Бот администратор</b></button>
+                        <div class="panel">
+                            <p class="p-products">Принимает и собирает заявки от подписчиков, это может быть запись в салон
+                                красоты,
+                                запись в автосервис, заказ еды, и многое другое.</p>
+                        </div>
+
+                        <button class="accordion"><b>Бот с фукцией приёмом платижей</b></button>
+                        <div class="panel">
+                            <p class="p-products">Этот бот позволяет круглосуточно 24/7 принимать оплату за ваш товар или услугу
+                                от ваших подписчиков.
+                                Обеспечивает работу по эффективному обслуживанию подписчиков.Консультирует пользователей по
+                                вопросам наличия имеющихся услуг.</p>
+                        </div>
+
+                        <button class="accordion"><b>Рассылки</b></button>
+                        <div class="panel">
+                            <p class="p-products">Бот этой фукцией может рассылать ваши предложения всем подписчикам бота,
+                                вы сами создаете внутри бота контент рассылки, заполняете текс предложения,
+                                выбираете картинку.</p>
+                        </div>
+                        <button class="accordion"><b>Ответы на вопросы и анкетирование</b></button>
+                        <div class="panel">
+                            <p class="p-products">Создадим бота который будет отвечать на частые вопросы ваших подписчиков, в
+                                удобной понятной форме с кнопками и подробным описанием.</p>
+                        </div>
+
+                        <button class="accordion"><b>интернет магазин</b></button>
+                        <div class="panel">
+                            <p class="p-products">С помощью бота будите продавать свои товары и услуги на полном автомате,
+                                бот будет с каталогом, с корзиной, с командами администратора, где вы полостью будите
+                                редоктировать товары и услуги.</p>
+                        </div>
+
+                        <button class="accordion"><b>Другое</b></button>
+                        <div class="panel">
+                            <p class="p-products">Рассмотрим и реализуем вашу идею.</p>
+                            </div3 </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 4 -->
+            <section class="section-4">
+                <main class="main">
+                    <h2 class="h2">Преимущества телеграм ботов:</h2>
+                    <div class="grid">
+                        <div class="grid-itm">
+                            <div class="grid-img">
+                                <img src="{% static 'img/бот с высокой скоростью ответа.png'%}" alt="">
+                            </div>
+                            <div class="grid-content">
+                                <h2 class="grid-title">Высокая скорость ответа</h2>
+                                <p>Гибкость и скорость ответа.Вы быстро можете изменить текст сообщения бота.
+                                    Это займёт 10 минут, клиент получит ответ на запрос мгновенно.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-itm">
+                            <div class="grid-img">
+                                <img src="{% static 'img/бот с внимание к клиенту.png'%}" alt="">
+                            </div>
+                            <div class="grid-content">
+                                <h2 class="grid-title">Внимание к клиенту</h2>
+                                <p>Персональное внимание к клиенту.Каждый покупатель обслужится ботом лично и ему это
+                                    понравится.</p>
+                            </div>
+                        </div>
+                        <div class="grid-itm">
+                            <div class="grid-img">
+                                <img src="{% static 'img/бот с оповещение .png'%}" alt="">
+                            </div>
+                            <div class="grid-content">
+                                <h2 class="grid-title">Система оповещений</h2>
+                                <p>В любой момент вы можете напомнить о себе клиентам.Рассказать про новые товары, акции, бонусы
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-itm">
+                            <div class="grid-img">
+                                <img src="{% static 'img/бот с интеграцией.png'%}" alt="">
+                            </div>
+                            <div class="grid-content">
+                                <h2 class="grid-title">Интеграция</h2>
+                                <p>Интеграция с вашим сайтом, например заявки с сайта будут приходить к в личные сообщения в
+                                    тедеграм</p>
+                            </div>
+                        </div>
+                        <div class="grid-itm">
+                            <div class="grid-img">
+                                <img src="{% static 'img/бот без регистрации.png'%}" alt="">
+                            </div>
+                            <div class="grid-content">
+                                <h2 class="grid-title">Без регистраций</h2>
+                                <p>Установка и регистрации не нужны.мессенджер Telegram есть почти у всех,
+                                    поэтому клиенту для связи с вами не нужно скачивать приложение и регистрироваться в нём.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-itm">
+                            <div class="grid-img">
+                                <img src="{% static 'img/бот не расходут трафик.png'%}" alt="">
+                            </div>
+                            <div class="grid-content">
+                                <h2 class="grid-title">Не расходует трафик</h2>
+                                <p>Малый расход трафика.Текстовый интерфейс не тратит важные для клиента мегабайты на открытие
+                                    картинок и тяжелых сайтов.
+                                    Клиент пишит боту и получает нужную информацию. </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </main>
+                <!-- section 5 -->
+                <section class="section-5">
+                    <div class="section-container-5">
+                        <img class="img-3" src="{% static 'img/о нас.png'%}" alt="main">
+                    </div>
+                    <div class="section-text">
+                        <div class="about-bot">
+                            <h1 class="h1-section-title-5"><hr>О нас</h1>
+                            <p class="flex-p">Команда разработчиков ботов telegaBots — это профессионалы с опытом
+                                разработки телеграм ботов более двух лет, которые будут работать с Вашим проектом от этапа
+                                продумывания до этапа внедрения и продвижения. Мы делаем ботов так, как делали бы их для себя и
+                                получаем удовольствие от этого процесса.
+                                Тестируем каждую функцию в боте с различными и нестандартными данными, чтобы при релизе бота не
+                                было никаких «сюрпризов».
+                                По этим причинам считаем, что наши услуги достойны Вашего внимания!</p>
+                        </div>
+                    </div>
+            </section>
+            <script src="{% static 'script.js'%}"></script>
+    {% endblock %}
+    {% block footer %}
+         <footer>
+                <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                </div>
+                <ul class="social">
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-linkedin"><ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+                <ul class="menu">
+                    <li><a href="#main">Гланая</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li class="cervis"><a href="#">Наши предложения</a></li>
+                    <li><a href="#">    </a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <p>©2022 Разработка ботов | Все права защищены</p>
+            </footer>
+        </main>
+    </div>
     {% endblock %}
 </body>
 </html>

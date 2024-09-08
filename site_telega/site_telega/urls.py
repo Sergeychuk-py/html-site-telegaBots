@@ -23,4 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='índex'),
     path('form/', views.form, name='form'),
+    path('success/', views.success, name='success'),
 ]
+

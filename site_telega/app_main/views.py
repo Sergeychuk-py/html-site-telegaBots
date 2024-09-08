@@ -15,10 +15,13 @@ def form(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Contact request submitted successfully.')
-            return render(request, 'app_main/messages.html', {'form': MyForms(request.GET)})
+            return render(request, 'app_main/success.html', {'form': MyForms(request.GET)})
         else:
             messages.error(request, 'Invalid form submission.')
             messages.error(request, form.errors)
     else:
         form = MyForms()
     return render(request, "app_main/form.html", {'form': form})
+
+def success(request):
+    return render(request, "app_main/success.html")

@@ -1,20 +1,19 @@
 {% extends "app_main/base.html" %}
 {% load static %}
 
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--    <title>form</title>-->
-<!--    <link rel="stylesheet" href="{% static 'style.css' %}">-->
-<!--</head>-->
 {% block title %}
     Форма заявки
 {% endblock %}
-{% block header %}
 
-{% endblock %}
+{% block header %}
+        <header class="flex-item-1 item-1">
+            <a href="#"><img class="img-logo" src="{% static 'img/logo.png'%}" alt="logo"></a>
+            <a href="#" class="header-item">Главная</a>
+            <a href="#" class="header-item">Наши предложения</a>
+            <a href="#" class="header-item">О нас</a>
+            <a href="#" class="header-item">Контакты</a>
+        </header>
+    {% endblock %}
 <!--<body>-->
 {% block content %}
     <div class="main">
@@ -28,7 +27,7 @@
         </div>
         <div class="modal-window">
 <!--            <form action=" " method="post">-->
-                {% include 'app_main/messages.html' %}
+
                 <form method="POST">
 
                     {% csrf_token %}
@@ -55,6 +54,51 @@
         </div>
     </div>
     <style>
+        .flex-item-1 {
+            width: 100%;
+        }
+
+        .img-logo {
+            border-radius: 10px 10px 10px 10px;
+            margin-left: 94px;
+            width: 240px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 15px;
+            padding-left: 15px;
+        }
+
+        .item-1{
+            background: rgb(39, 167, 231);
+            min-height: 80px;
+        }
+
+        .header-item {
+            margin-left: 40px;
+            text-align: center;
+            padding: 5px 30px;
+            font-size: 29px;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: all.8s;
+        }
+
+        .header-item:hover {
+            background: #2777e7;
+            border-radius: 10px 10px;
+        }
+
+        @media screen and (max-width: 650px) {
+            .img-logo {
+                display: none;
+            }
+            .header-item {
+                display: flex;
+                align-self: center;
+                font-size: 20px;
+                margin-left: 0;
+            }
+        }
+        /* header close */
         .a {
             text-decoration: none;
             color: black;
@@ -93,6 +137,7 @@
             align-items: center;
             justify-content: center;
             margin-top: 50px;
+            margin-bottom: 141px;
 
         }
         .modal-window {
